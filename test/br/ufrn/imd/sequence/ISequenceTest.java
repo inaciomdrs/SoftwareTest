@@ -45,32 +45,66 @@ public class ISequenceTest {
 		a = 0;
 		b = 2;
 		size = sequence.subSequence(a, b).size();
-		assertTrue(size == Math.abs(b - a));
+		assertTrue(size == (b - a));
+
+		// Class 1.1
+		a = 0;
+		b = 10;
+		size = sequence.subSequence(a, b).size();
+		assertTrue(size == (b - a));
+
+		// Class 1.2
+		a = 9;
+		b = 10;
+		size = sequence.subSequence(a, b).size();
+		assertTrue(size == (b - a));
 
 		// Class 2
 		a = 2;
-		b = 0;
-		size = sequence.subSequence(a, b).size();
-		assertTrue(size == 0);
-
-		// Class 3
-		a = 0;
 		b = 0;
 		newSubSequence = sequence.subSequence(a, b);
 		assertNull(newSubSequence);
 
 		// Class 3
+		a = 0;
+		b = 0;
+		size = sequence.subSequence(a, b).size();
+		assertTrue(size == 0);
+
+		// Class 3.1
+		a = 5;
+		b = 5;
+		size = sequence.subSequence(a, b).size();
+		assertTrue(size == 0);
+
+		// Class 4
 		a = -1;
 		b = 1;
 		newSubSequence = sequence.subSequence(a, b);
 		assertNull(newSubSequence);
 
-		fail("Not yet implemented");
+		// Class 5
+		a = 1;
+		b = -1;
+		newSubSequence = sequence.subSequence(a, b);
+		assertNull(newSubSequence);
+
+		// Class 6
+		a = 11;
+		b = 10;
+		newSubSequence = sequence.subSequence(a, b);
+		assertNull(newSubSequence);
+
+		// Class 7
+		a = 10;
+		b = 11;
+		newSubSequence = sequence.subSequence(a, b);
+		assertNull(newSubSequence);
 	}
 
 	@Test
 	public void testSize() {
-		fail("Not yet implemented");
+		assertTrue(sequence.size() == MAX_VALUE);
 	}
 
 }
