@@ -104,6 +104,7 @@ public class ISequenceTest {
 
 	@Test
 	public void testSize() {
+		assertNotNull(sequence);
 		assertTrue(sequence.size() == MAX_VALUE);
 	}
 
