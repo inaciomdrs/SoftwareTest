@@ -1,4 +1,4 @@
-package br.ufrn.imd.password;
+package br.ufrn.imd.funcional.password;
 
 public class PasswordChecker implements IPasswordChecker {
 

@@ -1,4 +1,4 @@
-package br.ufrn.imd.sequence;
+package br.ufrn.imd.funcional.sequence;
 
 import java.util.LinkedList;
 import java.util.List;

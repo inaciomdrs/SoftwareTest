@@ -1,4 +1,4 @@
-package br.ufrn.imd.calendar;
+package br.ufrn.imd.funcional.calendar;
 
 public class CalendarUtil {
 

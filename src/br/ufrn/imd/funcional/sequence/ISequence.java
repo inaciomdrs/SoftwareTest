@@ -1,4 +1,4 @@
-package br.ufrn.imd.sequence;
+package br.ufrn.imd.funcional.sequence;
 
 public interface ISequence<T> {
 	
