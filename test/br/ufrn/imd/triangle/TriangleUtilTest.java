@@ -83,16 +83,6 @@ public class TriangleUtilTest {
 	public final void test() {
 		TriangleType producedValue;
 		
-		/*producedValue = TriangleUtil.determineType(-1, 10, 10);
-		producedValue = TriangleUtil.determineType(10, -1, 10);
-		producedValue = TriangleUtil.determineType(10, 10, -1);
-		
-		producedValue = TriangleUtil.determineType(-1, -1, 10);
-		producedValue = TriangleUtil.determineType(-1, 10, -1);
-		producedValue = TriangleUtil.determineType(10, -1, -1);
-		
-		producedValue = TriangleUtil.determineType(-1, -1, -1);*/
-		
 		producedValue = TriangleUtil.determineType(10, 10, 10);
 		assertEquals(TriangleType.Equilateral, producedValue);
 		
